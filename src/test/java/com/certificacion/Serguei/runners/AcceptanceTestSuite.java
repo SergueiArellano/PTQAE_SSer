@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         features= {"src/test/resources/features/"},
         glue="com.certificacion.Serguei.stepDefinitions",
         plugin = {"pretty","json:target/cucumber-reports/cucumber.json"},
-        tags = "@SiigoLogin",
+        tags = "@SiigoAll",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
 public class AcceptanceTestSuite {
