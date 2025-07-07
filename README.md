@@ -1,31 +1,28 @@
-# 🏨 Booking Automation Project
+# 🏨 Prueba Técnica QA Engineer 
 
-This repository contains the test automation for the **Booking** hotel reservation platform. It uses **SerenityBDD**, **selenium** with **Cucumber** and the **Screenplay** design pattern to ensure robust and maintainable tests.
+Este repositorio contiene la automatización de pruebas para la prueba técnica QA Engineer **Crear Clientes**. Utiliza **SerenityBDD**, **Selenium** con **Cucumber** y el patrón de diseño **Screenplay** para garantizar pruebas robustas y mantenibles.
 
-## 📌 Technologies Used
+## 📌 Tecnologías Usadas
 
 - **Java 21**
 - **SerenityBDD**
 - **CucumberBDD**
 - **Screenplay Pattern**
-- **Gradle 8.6**
+- **Gradle 8.14**
 - **Selenium WebDriver**
 
-## 📁 Project Structure
+## 📁 Estructura del Proyecto
 
 ```
-📦 booking-automation
+📦 PTQAE_SSer
 ├── 📂 src
 │   ├── 📂 main
-│   │   ├── 📂 java/com/certificacion/HansJ/app
-|   |   |   ├── 📂 driver SelfHealingDriver
-│   │   │   ├── 📂 tasks
-│   │   │   ├── 📂 questions
-│   │   │   ├── 📂 interactions
-│   │   │   ├── 📂 userinterfaces
-│   │   │   ├── 📂 utils
+│   │   ├── 📂 java/com/certification/Serguei/app
+|   |   |   ├── 📂 controller
+│   │   │   ├── 📂 helpers
+│   │   │   ├── 📂 page
 │   ├── 📂 test
-│   │   ├── 📂 java/com/certificacion/HansJ/app/runners
+│   │   ├── 📂 java/com/certification/Serguei/runners
 │   │   ├── 📂 resources/features
 ├── 📜 build.gradle
 ├── 📜 serenity.conf
@@ -34,51 +31,49 @@ This repository contains the test automation for the **Booking** hotel reservati
 
 ## 🚀 Instalación y Configuración
 
-### 1️⃣ Clone the repository
+### 1️⃣ Clonar repositorio
 ```sh
-git clone git@github.com:hgomezcoron/Booking_HansJ_FuseQA.git
+git clone git
 main: CI/CD logic
 ```
 
-### 2️⃣ Configure dependencies with Gradle
+### 2️⃣ Configurar dependencias con Gradle
 ```sh
 gradle clean build
 ```
 
-### 3️⃣ Run the tests
+### 3️⃣ Ejecutar Pruebas
 
-To execute the tests from the terminal:
+Para ejecutar pruebas desde terminal:
 ```sh
 gradle clean test
 ```
-To generate the Serenity report:
+Para generar reporte de Serenity:
 ```sh
 gradle aggregate
 ```
 
-## 🧪 Running Tests by Tags
-You can run specific tests using tags:
+## 🧪 Ejecutando Pruebas desde Tags
+Puedes ejecutar pruebas especificas usando tags:
 ```sh
-gradle test -Dcucumber.options="--tags @Sorting"
+gradle test -Dcucumber.options="--tags @SampleApp"
 ```
 
-## 📜  Implemented Scenarios
-- **Hotel Search and Filtering** 
-- **Flight Booking Process** 
-- **User Login & Profile Update**
-- **Hotel Details & Amenities Verification**
+## 📜  Escenarios Implementados
+- **Ingreso exitoso al portal AppianCloud** 
+- **Acceder a la sección de desarrollo del proyecto** 
 
-##Once the tests are executed, Serenity automatically generates a detailed test report. To view it, open:
+Una vez son ejecutados los casos, Serenity automáticamente genera el reporte detallado de pruebas. Para ver reporte, abrir:
 ```sh
 target/site/serenity/index.html
 ```
 
-## 🛠 Maintenance and Contribution
-1. **Create a new branch for your improvement**: `git checkout -b feature/nueva-mejora`
-2. **Make changes and commit:shCopiarEditar**: `git commit -m 'Añadir nueva funcionalidad'`
-3. **Push the changes**: `git push origin feature/nueva-mejora`
-4. **Open a Pull Request** 🛠
+## 🛠 Mantenimiento y Contribución
+1. **Crea una nueva rama para tu mejora**: `git checkout -b feature/nueva-mejora`
+2. **Realiza cambios y haz commit**:`git commit -m 'Añadir nueva funcionalidad'`
+3. **Sube los cambios**: `git push origin feature/nueva-mejora`
+4. **Abre un Pull Request** 🛠
 
 ---
 
-📌 **Contact:** For inquiries, reach out to[hgomezcoron@gmail.com](mailto:tu.email@example.com)
+📌 **Contacto:** Para inquietudes, enviar a [testqa@testqa.com](mailto:tu.email@example.com)

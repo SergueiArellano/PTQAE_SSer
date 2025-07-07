@@ -1,4 +1,4 @@
-group 'Booking_HansJ_FuseQA'
+group 'PTQAE_SSer'
 version '1.0'
 apply plugin: 'java'
 apply plugin: 'application'
