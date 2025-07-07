@@ -1,5 +1,6 @@
 package com.certificacion.Serguei.app.tasks.Siigo;
 
+import net.serenitybdd.annotations.Step;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -16,6 +17,7 @@ public class Login implements Task {
     }
 
     @Override
+    @Step("Ingresar credenciales para iniciar Sesión.")
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 WaitUntil.the(EMAIL_FIELD_SIIGO, isVisible()).forNoMoreThan(10).seconds(),
